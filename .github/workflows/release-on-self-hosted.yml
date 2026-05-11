@@ -2,6 +2,8 @@ name: Auto Build Release (Self-hosted)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'
 
 env:
   UPSTREAM_OWNER: "prometheus"  # 上游开发者/组织名
